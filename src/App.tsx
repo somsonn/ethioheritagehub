@@ -14,6 +14,8 @@ import TouristDashboard from "./pages/TouristDashboard";
 import ProviderDashboard from "./pages/ProviderDashboard";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import ProviderDetails from "./pages/ProviderDetails";
+import MockPayment from "./pages/MockPayment";
 
 const queryClient = new QueryClient();
 
@@ -27,10 +29,15 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/auth" element={<Auth />} />
+            <Route path="/payment/mock" element={<MockPayment />} />
             <Route path="/guides" element={<Guides />} />
+            <Route path="/guides/:id" element={<ProviderDetails />} />
             <Route path="/hotels" element={<Hotels />} />
-            <Route path="/transport" element={<Transport />} />
+            <Route path="/hotels/:id" element={<ProviderDetails />} />
+            <Route path="/transports" element={<Transport />} />
+            <Route path="/transports/:id" element={<ProviderDetails />} />
             <Route path="/artisans" element={<Artisans />} />
+            <Route path="/artisans/:id" element={<ProviderDetails />} />
             <Route path="/dashboard/tourist" element={<TouristDashboard />} />
             <Route path="/dashboard/provider" element={<ProviderDashboard />} />
             <Route path="/profile" element={<Profile />} />

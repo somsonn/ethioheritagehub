@@ -21,7 +21,7 @@ const categories = [
     title: 'Transport',
     description: 'Reliable vehicles and experienced drivers for safe travel across Ethiopia\'s landscapes.',
     icon: Car,
-    link: '/transport',
+    link: '/transports',
     color: 'bg-ethiopia-red',
   },
   {

@@ -39,7 +39,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/transport" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <Link to="/transports" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                   Transport
                 </Link>
               </li>
@@ -57,11 +57,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-primary-foreground/70">
                 <Mail className="w-4 h-4" />
-                <span>info@ethioheritagehub.com</span>
+                <span>somsonengda@gmail.com</span>
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/70">
                 <Phone className="w-4 h-4" />
-                <span>+251 911 123 456</span>
+                <span>+251930925984</span>
               </li>
             </ul>
           </div>
