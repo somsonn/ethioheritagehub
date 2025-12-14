@@ -105,7 +105,7 @@ export default function TouristDashboard() {
               </div>
             </CardContent>
           </Card>
-          <Card className="card-hover cursor-pointer" onClick={() => navigate('/transport')}>
+          <Card className="card-hover cursor-pointer" onClick={() => navigate('/transports')}>
             <CardContent className="p-4 flex items-center gap-4">
               <div className="w-12 h-12 rounded-lg bg-destructive/10 flex items-center justify-center">
                 <Clock className="w-6 h-6 text-destructive" />

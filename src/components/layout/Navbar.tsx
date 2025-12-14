@@ -51,7 +51,7 @@ export function Navbar() {
             <Link to="/hotels" className="text-muted-foreground hover:text-foreground transition-colors">
               Hotels
             </Link>
-            <Link to="/transport" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/transports" className="text-muted-foreground hover:text-foreground transition-colors">
               Transport
             </Link>
             <Link to="/artisans" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -120,7 +120,7 @@ export function Navbar() {
               <Link to="/hotels" className="text-muted-foreground hover:text-foreground transition-colors">
                 Hotels
               </Link>
-              <Link to="/transport" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/transports" className="text-muted-foreground hover:text-foreground transition-colors">
                 Transport
               </Link>
               <Link to="/artisans" className="text-muted-foreground hover:text-foreground transition-colors">
