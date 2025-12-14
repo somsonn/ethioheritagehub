@@ -1,0 +1,27 @@
+{
+  "footer": {
+    "about": "ስለ ኢትዮ-ቅርስ ሀብ",
+    "aboutText": "ተጓዦችን ከኢትዮጵያ የበለጸገ ባህላዊ ቅርስ ጋር በታመኑ የአካባቢ አስጎብኚዎች፣ ትክክለኛ የመቆያ ቦታዎች እና ልዩ ልምዶች ማገናኘት።",
+    "quickLinks": "ፈጣን አገናኞች",
+    "services": "አገልግሎቶች",
+    "contact": "ያግኙን",
+    "rights": "መብቱ በህግ የተጠበቀ ነው።"
+  },
+  "nav": {
+    "home": "መነሻ",
+    "guides": "አስጎብኚዎች",
+    "hotels": "ሆቴሎች",
+    "transport": "ትራንስፖርት",
+    "artisans": "የእጅ ጥበብ ባለሙያዎች",
+    "signIn": "ይግቡ",
+    "getStarted": "ይጀምሩ",
+    "dashboard": "ዳሽቦርድ",
+    "profile": "መገለጫ",
+    "signOut": "ውጣ"
+  },
+  "common": {
+    "viewDetails": "ዝርዝሮችን ይመልከቱ",
+    "bookNow": "አሁን ይያዙ",
+    "verified": "የተረጋገጠ"
+  }
+}

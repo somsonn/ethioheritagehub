@@ -1,0 +1,27 @@
+{
+  "footer": {
+    "about": "À propos d'EthioHeritageHub",
+    "aboutText": "Connecter les voyageurs au riche patrimoine culturel de l'Éthiopie grâce à des guides locaux de confiance, des séjours authentiques et des expériences uniques.",
+    "quickLinks": "Liens rapides",
+    "services": "Services",
+    "contact": "Contactez-nous",
+    "rights": "Tous droits réservés."
+  },
+  "nav": {
+    "home": "Accueil",
+    "guides": "Guides",
+    "hotels": "Hôtels",
+    "transport": "Transport",
+    "artisans": "Artisans",
+    "signIn": "Se connecter",
+    "getStarted": "Commencer",
+    "dashboard": "Tableau de bord",
+    "profile": "Profil",
+    "signOut": "Se déconnecter"
+  },
+  "common": {
+    "viewDetails": "Voir les détails",
+    "bookNow": "Réserver maintenant",
+    "verified": "Vérifié"
+  }
+}

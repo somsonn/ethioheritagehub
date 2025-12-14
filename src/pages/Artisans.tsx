@@ -4,7 +4,7 @@ import { ProviderCard } from '@/components/providers/ProviderCard';
 import { Input } from '@/components/ui/input';
 import { supabase } from '@/integrations/supabase/client';
 import { Artisan, Profile } from '@/types';
-import { Search, Palette } from 'lucide-react';
+import { Search, ShoppingBag } from 'lucide-react';
 
 export default function Artisans() {
   const [artisans, setArtisans] = useState<(Artisan & { profile: Profile })[]>([]);

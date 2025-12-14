@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
 import { Menu, X, User, LogOut } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,6 +17,7 @@ export function Navbar() {
   const { user, profile, role, signOut } = useAuth();
   const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const handleSignOut = async () => {
     await signOut();
@@ -46,21 +49,22 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <Link to="/guides" className="text-muted-foreground hover:text-foreground transition-colors">
-              Guides
+              {t('nav.guides')}
             </Link>
             <Link to="/hotels" className="text-muted-foreground hover:text-foreground transition-colors">
-              Hotels
+              {t('nav.hotels')}
             </Link>
             <Link to="/transports" className="text-muted-foreground hover:text-foreground transition-colors">
-              Transport
+              {t('nav.transport')}
             </Link>
             <Link to="/artisans" className="text-muted-foreground hover:text-foreground transition-colors">
-              Artisans
+              {t('nav.artisans')}
             </Link>
           </div>
 
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             {user ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -74,40 +78,43 @@ export function Navbar() {
                 <DropdownMenuContent align="end" className="w-48">
                   <DropdownMenuItem asChild>
                     <Link to={getDashboardLink()} className="cursor-pointer">
-                      Dashboard
+                      {t('nav.dashboard')}
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <Link to="/profile" className="cursor-pointer">
-                      Profile
+                      {t('nav.profile')}
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem onClick={handleSignOut} className="cursor-pointer text-destructive">
                     <LogOut className="w-4 h-4 mr-2" />
-                    Sign Out
+                    {t('nav.signOut')}
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
               <>
                 <Button variant="ghost" asChild>
-                  <Link to="/auth">Sign In</Link>
+                  <Link to="/auth">{t('nav.signIn')}</Link>
                 </Button>
                 <Button asChild>
-                  <Link to="/auth?mode=signup">Get Started</Link>
+                  <Link to="/auth?mode=signup">{t('nav.getStarted')}</Link>
                 </Button>
               </>
             )}
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher />
+            <button
+              className="p-2"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -115,34 +122,34 @@ export function Navbar() {
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
               <Link to="/guides" className="text-muted-foreground hover:text-foreground transition-colors">
-                Guides
+                {t('nav.guides')}
               </Link>
               <Link to="/hotels" className="text-muted-foreground hover:text-foreground transition-colors">
-                Hotels
+                {t('nav.hotels')}
               </Link>
               <Link to="/transports" className="text-muted-foreground hover:text-foreground transition-colors">
-                Transport
+                {t('nav.transport')}
               </Link>
               <Link to="/artisans" className="text-muted-foreground hover:text-foreground transition-colors">
-                Artisans
+                {t('nav.artisans')}
               </Link>
               <div className="border-t border-border pt-4 flex flex-col gap-2">
                 {user ? (
                   <>
                     <Button variant="ghost" asChild className="justify-start">
-                      <Link to={getDashboardLink()}>Dashboard</Link>
+                      <Link to={getDashboardLink()}>{t('nav.dashboard')}</Link>
                     </Button>
                     <Button variant="ghost" onClick={handleSignOut} className="justify-start text-destructive">
-                      Sign Out
+                      {t('nav.signOut')}
                     </Button>
                   </>
                 ) : (
                   <>
                     <Button variant="ghost" asChild className="justify-start">
-                      <Link to="/auth">Sign In</Link>
+                      <Link to="/auth">{t('nav.signIn')}</Link>
                     </Button>
                     <Button asChild>
-                      <Link to="/auth?mode=signup">Get Started</Link>
+                      <Link to="/auth?mode=signup">{t('nav.getStarted')}</Link>
                     </Button>
                   </>
                 )}

@@ -1,4 +1,4 @@
-import { CheckCircle, Globe, Shield, Clock, Users, Heart } from 'lucide-react';
+import { CheckCircle, Globe, Shield, Clock, Users, Sparkles } from 'lucide-react';
 
 const features = [
   {
@@ -22,7 +22,7 @@ const features = [
     description: 'Support local businesses and communities while experiencing authentic culture.',
   },
   {
-    icon: Heart,
+    icon: Sparkles,
     title: 'Authentic Experiences',
     description: 'Curated heritage experiences that go beyond typical tourist attractions.',
   },
