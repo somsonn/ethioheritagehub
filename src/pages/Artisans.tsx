@@ -102,7 +102,7 @@ export default function Artisans() {
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-14 h-14 rounded-xl bg-ethiopia-earth flex items-center justify-center">
-              <Palette className="w-7 h-7 text-primary-foreground" />
+              <ShoppingBag className="w-7 h-7 text-primary-foreground" />
             </div>
             <div>
               <h1 className="font-display text-3xl md:text-4xl font-bold text-foreground">Artisans</h1>
