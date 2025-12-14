@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { supabase } from '@/integrations/supabase/client';
 import { Booking } from '@/types';
-import { Calendar, MapPin, Clock, Star, Plus } from 'lucide-react';
+import { Calendar, MapPin, Clock, ShoppingBag, Plus } from 'lucide-react';
 import { format } from 'date-fns';
 
 export default function TouristDashboard() {
@@ -119,7 +119,7 @@ export default function TouristDashboard() {
           <Card className="card-hover cursor-pointer" onClick={() => navigate('/artisans')}>
             <CardContent className="p-4 flex items-center gap-4">
               <div className="w-12 h-12 rounded-lg bg-ethiopia-earth/10 flex items-center justify-center">
-                <Star className="w-6 h-6 text-ethiopia-earth" />
+                <ShoppingBag className="w-6 h-6 text-ethiopia-earth" />
               </div>
               <div>
                 <p className="font-medium text-foreground">Meet Artisans</p>

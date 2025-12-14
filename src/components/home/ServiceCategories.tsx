@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
-import { Users, Hotel, Car, Palette } from 'lucide-react';
+import { Users, Hotel, Car, ShoppingBag } from 'lucide-react';
 
 const categories = [
   {
@@ -27,7 +27,7 @@ const categories = [
   {
     title: 'Artisans',
     description: 'Connect with local craftspeople creating traditional Ethiopian art, textiles, and jewelry.',
-    icon: Palette,
+    icon: ShoppingBag,
     link: '/artisans',
     color: 'bg-ethiopia-earth',
   },
